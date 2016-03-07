@@ -1,36 +1,20 @@
-%nav.navbar.navbar-default{role: "navigation"}
-  / Brand and toggle get grouped for better mobile display
-  .navbar-header
-    %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
-      %span.sr-only Toggle navigation
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    = link_to 'FaHe', root_path, class: 'navbar-brand'
-  / Collect the nav links, forms, and other content for toggling
-  .collapse.navbar-collapse.navbar-ex1-collapse
-    %ul.nav.navbar-nav
-      %li.active
-        %a{:href => "#"} Link
-      %li
-        %a{:href => "#"} Link
-      %li.dropdown
-        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-          Dropdown
-          %b.caret
-        %ul.dropdown-menu
-          %li
-            %a{:href => "#"} Action
-          %li
-            %a{:href => "#"} Another action
-          %li
-            %a{:href => "#"} Something else here
-          %li
-            %a{:href => "#"} Separated link
-          %li
-            %a{:href => "#"} One more separated link
-    %form.navbar-form.navbar-left{:role => "search"}
-      .form-group
-        %input.form-control{:placeholder => "Search", :type => "text"}/
-      %button.btn.btn-default{:type => "submit"} Submit
-  / /.navbar-collapse
+%nav#navbar-main.navbar.navbar-default.transparent.navbar-static-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#navCollapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle Navigation
+        %span.fa.fa-chevron-down
+        %b Menu
+      %a.navbar-brand{:href => "#"} Your Brand
+    #navCollapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.active
+          %a{:href => "#"} Home
+        %li
+          %a{:href => "#"} Services
+        %li
+          %a{:href => "#"} Projects
+        %li
+          %a{:href => "#"} Company
+        %li
+          %a{:href => "#"} Contact

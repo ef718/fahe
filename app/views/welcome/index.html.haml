@@ -1,3 +1,56 @@
 = render partial: 'navbar'
+= render partial: 'carousel'
 
-= render partial: 'logo'
+.container
+  / Example row of columns
+  .row.text-center
+    .col-md-4
+      .fa.fa-paw.fa-3x.circles
+      %h2 Paws Advantage
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn.btn-default{:href => "#", :role => "button"} Get the Scoop »
+    .col-md-4
+      .fa.fa-heart.fa-3x.circles
+      %h2 Favorite Paws
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn.btn-default{:href => "#", :role => "button"} More faves »
+    .col-md-4
+      .fa.fa-book.fa-3x.circles
+      %h2 Paws Tales
+      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      %p
+        %a.btn.btn-default{:href => "#", :role => "button"} Full Story »
+  / START THE FEATURETTES
+  %hr
+    .row
+      .col-md-7
+        %h2.featurette-heading
+          First featurette heading.
+          %span.text-muted It'll blow your mind.
+        %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      .col-md-5.text-center
+        %img.featurette-image.img-responsive{:alt => "placeholder", :src => "http://placehold.it/350/398439/fff&amp;text=Image+Holder"}
+    %hr
+      .row
+        .col-md-7.col-md-push-5
+          %h2.featurette-heading
+            Oh yeah, it's that good.
+            %span.text-muted See for yourself.
+          %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        .col-md-5.col-md-pull-7.text-center
+          %img.featurette-image.img-responsive{:alt => "placeholder", :src => "http://placehold.it/350/398439/fff&amp;text=Image+Holder"}
+      %hr
+        .row
+          .col-md-7
+            %h2.featurette-heading
+              And lastly, this one.
+              %span.text-muted Checkmate.
+            %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+          .col-md-5.text-center
+            %img.featurette-image.img-responsive{:alt => "placeholder", :src => "http://placehold.it/350/398439/fff&amp;text=Image+Holder"}
+        / /END THE FEATURETTES
+%hr
+
+= render partial: 'footer'
