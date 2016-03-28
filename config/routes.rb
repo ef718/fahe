@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  # get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  get '/testing', to: 'welcome#testing_instruments'
+  get '/maintenance-tools', to: 'welcome#maintenance_tools'
+  get '/repairs', to: 'welcome#repair_materials'
+  get '/equipment', to: 'welcome#equipment_leasing'
+  get '/inspection', to: 'welcome#inspection'
+  get '/about', to: 'welcome#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

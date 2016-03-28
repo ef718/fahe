@@ -5,27 +5,27 @@
         %span.sr-only Toggle Navigation
         %span.fa.fa-chevron-down
         Menu
-      %a.navbar-brand{:href => "#"} FAHE World
+      %a.navbar-brand{href: "/"} FAHE World
     #navCollapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li.active
-          %a{href: "#"} Home
+          = link_to 'Home', root_path
         %li.dropdown
           %a.dropdown-toggle{href: "#", role: "button", data: {toggle: "dropdown"}} Products
           %ul.dropdown-menu
             %li
-              %a{href: "#"} Testing Instruments
+              %a{href: "/testing"} Testing Instruments
             %li
-              %a{href: "#"} Maintenance Machines & Tools
+              %a{href: "/maintenance-tools"} Maintenance Machines & Tools
             %li
-              %a{href: "#"} Repair Materials
+              %a{href: "/repairs"} Repair Materials
         %li.dropdown
           %a.dropdown-toggle{href: "#", role: "button", data: {toggle: "dropdown"}} Services
           %ul.dropdown-menu
             %li
-              %a{href: "#"} Equipment Leasing
+              %a{href: "/equipment"} Equipment Leasing
             %li
-              %a{href: "#"} Periodic Inspection
+              %a{href: "/inspection"} Periodic Inspection
             %li.dropdown-submenu
               %a{href: "#"} Maintenance
               %ul.dropdown-menu
@@ -41,7 +41,7 @@
           %a.dropdown-toggle{href: "#", role: "button", data: {toggle: "dropdown"}} Company
           %ul.dropdown-menu
             %li
-              %a{href: "#"} About Fahe
+              %a{href: "/about"} About Fahe
             %li
               %a{href: "#"} In the News
             %li
