@@ -9,12 +9,35 @@
     #navCollapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li.active
-          %a{:href => "#"} Home
+          %a{href: "#"} Home
+        %li.dropdown
+          %a.dropdown-toggle{href: "#", role: "button", data: {toggle: "dropdown"}} Products
+          %ul.dropdown-menu
+            %li
+              %a{href: "#"} Testing Instruments
+            %li
+              %a{href: "#"} Maintenance Machines & Tools
+            %li
+              %a{href: "#"} Repair Materials
+        %li.dropdown
+          %a.dropdown-toggle{href: "#", role: "button", data: {toggle: "dropdown"}} Services
+          %ul.dropdown-menu
+            %li
+              %a{href: "#"} Equipment Leasing
+            %li
+              %a{href: "#"} Periodic Inspection
+            %li.dropdown-submenu
+              %a{href: "#"} Maintenance
+              %ul.dropdown-menu
+                %li
+                  %a{href: "#"} Highway Maintenance
+                %li
+                  %a{href: "#"} Railway Maintenance
+                %li
+                  %a{href: "#"} Tunnel Maintenance
+                %li
+                  %a{href: "#"} Deck Pavement & Repair
         %li
-          %a{:href => "#"} Services
+          %a{href: "#"} Company
         %li
-          %a{:href => "#"} Projects
-        %li
-          %a{:href => "#"} Company
-        %li
-          %a{:href => "#"} Contact
+          %a{href: "#"} Contact
