@@ -8,19 +8,19 @@
       %h2 Testing Instruments
       %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       %p
-        %a.btn.btn-default{href: "#", :role => "button"} Get the Scoop »
+        = link_to "Get the Scoop »", testing_path, class: "btn btn-default"
     .col-md-4
       .fa.fa-gear.fa-spin.fa-3x.circles
       %h2 Maintenance Tools
       %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       %p
-        %a.btn.btn-default{href: "#", :role => "button"} More faves »
+        = link_to "More faves »", maintenance_tools_path, class: "btn btn-default"
     .col-md-4
       .fa.fa-truck.fa-3x.circles
       %h2 Equipment Leasing
       %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
       %p
-        %a.btn.btn-default{href: "#", :role => "button"} Full Story »
+        = link_to "Full Story »", equipment_path, class: "btn btn-default"
   / START THE FEATURETTES
   %hr
     .row
@@ -39,7 +39,7 @@
             %span.text-muted See for yourself.
           %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
         .col-md-5.col-md-pull-7.text-center
-          = image_tag("structures/tunnel.jpg", class: "featurette-image img-responsive")
+          = image_tag("structures/highway.jpg", class: "featurette-image img-responsive")
       %hr
         .row
           .col-md-7
